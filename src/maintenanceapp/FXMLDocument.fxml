@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="maintenanceProgramLabel" prefHeight="402.0" prefWidth="579.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/22" fx:controller="maintenanceapp.FXMLDocumentController">
+   <children>
+      <Label layoutX="206.0" layoutY="14.0" text="Maintenance Program">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="fileNameLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="41.0" layoutY="83.0" prefHeight="20.0" prefWidth="71.0" text="File Name" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fileNameTextField" layoutX="123.0" layoutY="80.0" />
+      <Button fx:id="loadButton" layoutX="282.0" layoutY="80.0" mnemonicParsing="false" onAction="#handleLoadButtonAction" prefHeight="26.0" prefWidth="49.0" text="Load" />
+      <Button fx:id="addButton" layoutX="281.0" layoutY="116.0" mnemonicParsing="false" onAction="#handleAddButtonAction" prefHeight="26.0" prefWidth="50.0" text="Add" />
+      <Button fx:id="removeButton" layoutX="467.0" layoutY="263.0" mnemonicParsing="false" onAction="#handleRemoveButtonAction" prefHeight="26.0" prefWidth="82.0" text="Remove" />
+      <Button fx:id="selectButton" layoutX="350.0" layoutY="263.0" mnemonicParsing="false" onAction="#handleSelectButtonAction" prefHeight="26.0" prefWidth="82.0" text="Select" />
+      <Button fx:id="resetButton" layoutX="350.0" layoutY="364.0" mnemonicParsing="false" onAction="#handleResetButtonAction" prefHeight="26.0" prefWidth="82.0" text="Reset" />
+      <Button fx:id="exitButton" layoutX="467.0" layoutY="364.0" mnemonicParsing="false" onAction="#handleExitButtonAction" prefHeight="26.0" prefWidth="82.0" text="Exit" />
+      <ListView fx:id="listBox" layoutX="350.0" layoutY="52.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label fx:id="addToolLabel" layoutX="47.0" layoutY="120.0" text="New Tool">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="toolNameTextField" layoutX="123.0" layoutY="117.0" />
+      <Label fx:id="errorMsg" contentDisplay="CENTER" layoutX="47.0" layoutY="152.0" prefHeight="222.0" prefWidth="284.0" wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
